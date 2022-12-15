@@ -50,7 +50,7 @@
         <div class="menu_row">
             <a id="menu_link" href="#portfolio"><i class='bx bx-images'></i>Portfolio</a>
             <a id="menu_link" href="#contact"><i class='bx bx-send'></i>Contactme</a>
-            <a id="menu_link" href="#"><i class='bx bx-share-alt'></i>Share</a>
+            <a id="menu_link" href="#" onclick="copyclip()"><i class='bx bx-share-alt'></i>Share</a>
         </div>
         <div class="menu_row">
             <i id="menu_close" class="bx bx-x menu_close"></i>
@@ -389,6 +389,14 @@
         mob_menu_btn.onclick = function () {
             mob_menu.style.bottom = "0";
             header_sec_desk.style.display = "none"
+        }
+
+        /* ============= Share button handler ============ */
+        function copyclip() {
+            let domainName = location.href;
+//             console.log(domainName)
+            alert("Url copied to clipboard");
+            navigator.clipboard.write(domainName);
         }
 
         /* ============= Slider section Start ============ */

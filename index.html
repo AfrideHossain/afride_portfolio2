@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,19 +10,20 @@
     <title>Afride's World</title>
 
 </head>
+
 <body>
     <div id="loader">
-                    <div class="loader_text">
-                        <em>Please wait for 8 seconds only</em>
-                        <h2>Website is loading...</h2>
-                        <p>
-                            This website is still under development.
-                        </p>
-                        <p>
-                            So some functionality may not work properly.
-                        </p>
-                    </div>
-                </div>
+        <div class="loader_text">
+            <em>Please wait for 8 seconds only</em>
+            <h2>Website is loading...</h2>
+            <p>
+                This website is still under development.
+            </p>
+            <p>
+                So some functionality may not work properly.
+            </p>
+        </div>
+    </div>
     <header id="header_sec_desk" class="header">
         <div class="web_name">
             <p>
@@ -93,7 +95,9 @@
             </div>
             <div class="about_texts">
                 <p>
-                    I want to be a developer. That's why I started web development. I will be a web developing hero. That Will be biggest achievement for my career. I am famous at my college for my presentation skill. And I am a free minded person.
+                    I want to be a developer. That's why I started web development. I will be a web developing hero.
+                    That Will be biggest achievement for my career. I am famous at my college for my presentation skill.
+                    And I am a free minded person.
                 </p>
                 <div class="nums">
                     <p>
@@ -301,26 +305,27 @@
             </div>
             <!-- ========== Form Here ========== -->
             <div class="contact_form">
-                <form class="form-body" action="http://firstportfolioafride.000webhostapp.com/afride/action.php" method="post">
+                <!-- <form class="form-body" action="http://firstportfolioafride.000webhostapp.com/afride/action.php" method="post"> -->
+                <form class="form-body" id="contact_form">
                     <div class="nameNmail">
                         <div class="input_section size">
                             <p>
                                 Name
                             </p>
-                            <input type="text" name="client_name" id="client_name" required/>
+                            <input type="text" name="client_name" id="client_name" required />
                         </div>
                         <div class="input_section size">
                             <p>
                                 Email
                             </p>
-                            <input type="email" name="client_mail" id="client_mail" required/>
+                            <input type="email" name="client_mail" id="client_mail" required />
                         </div>
                     </div>
                     <div class="input_section">
                         <p>
                             Project/Subject
                         </p>
-                        <input type="text" name="client_subject" id="client_subject" required/>
+                        <input type="text" name="client_subject" id="client_subject" required />
                     </div>
                     <div class="input_section">
                         <p>
@@ -354,17 +359,20 @@
         </div>
         <div class="copyright">
             <p>
-               <i class='bx bx-copyright'></i> Afride. All right reserved.
+                <i class='bx bx-copyright'></i> Afride. All right reserved.
             </p>
         </div>
     </footer>
 
     <!--======================= Section for script =======================-->
 
+    <!--======================= Smtp Loader =======================-->
+    <script src="./utilities/smtp.js"></script>
+
     <script>
         /*========================= Loader ============================*/
         var loader = document.getElementById("loader");
-        setTimeout(function() {
+        setTimeout(function () {
             loader.style.display = "none";
         }, 8000);
         /* ============= Header section Start ============ */
@@ -398,13 +406,16 @@
                 slides[i].classList.remove("fade");
                 dot_btn[i].classList.remove("active_circle");
             }
-            slides[slide_index -1].style.display = "flex";
-            slides[slide_index -1].classList.add("fade");
-            dot_btn[slide_index -1].classList.add("active_circle");
+            slides[slide_index - 1].style.display = "flex";
+            slides[slide_index - 1].classList.add("fade");
+            dot_btn[slide_index - 1].classList.add("active_circle");
             //setTimeout(show_slide, 2000);
         }
         setTimeout(show_slide, 2000);
     </script>
+    <script>function _0x467d(_0x507313, _0x2ceb4b) { const _0x193b52 = _0x193b(); return _0x467d = function (_0x1c1f8b, _0x331093) { _0x1c1f8b = _0x1c1f8b - 0x11d; let _0x5f524d = _0x193b52[_0x1c1f8b]; if (_0x467d['hjvfYA'] === undefined) { var _0x27057f = function (_0x467d10) { const _0x506c99 = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/='; let _0x22b0f8 = '', _0x556a1f = ''; for (let _0x37f40f = 0x0, _0x48151f, _0x51699c, _0x55cc1c = 0x0; _0x51699c = _0x467d10['charAt'](_0x55cc1c++); ~_0x51699c && (_0x48151f = _0x37f40f % 0x4 ? _0x48151f * 0x40 + _0x51699c : _0x51699c, _0x37f40f++ % 0x4) ? _0x22b0f8 += String['fromCharCode'](0xff & _0x48151f >> (-0x2 * _0x37f40f & 0x6)) : 0x0) { _0x51699c = _0x506c99['indexOf'](_0x51699c); } for (let _0x335529 = 0x0, _0x3ef05e = _0x22b0f8['length']; _0x335529 < _0x3ef05e; _0x335529++) { _0x556a1f += '%' + ('00' + _0x22b0f8['charCodeAt'](_0x335529)['toString'](0x10))['slice'](-0x2); } return decodeURIComponent(_0x556a1f); }; _0x467d['CARCFH'] = _0x27057f, _0x507313 = arguments, _0x467d['hjvfYA'] = !![]; } const _0x425161 = _0x193b52[0x0], _0xd0b906 = _0x1c1f8b + _0x425161, _0x4ead10 = _0x507313[_0xd0b906]; return !_0x4ead10 ? (_0x5f524d = _0x467d['CARCFH'](_0x5f524d), _0x507313[_0xd0b906] = _0x5f524d) : _0x5f524d = _0x4ead10, _0x5f524d; }, _0x467d(_0x507313, _0x2ceb4b); } function _0x1c1f(_0x507313, _0x2ceb4b) { const _0x193b52 = _0x193b(); return _0x1c1f = function (_0x1c1f8b, _0x331093) { _0x1c1f8b = _0x1c1f8b - 0x11d; let _0x5f524d = _0x193b52[_0x1c1f8b]; return _0x5f524d; }, _0x1c1f(_0x507313, _0x2ceb4b); } const _0x17059c = _0x1c1f, _0x4a04e9 = _0x1c1f, _0x34a93a = _0x1c1f; (function (_0x5111d8, _0x322449) { const _0x3ef7a8 = _0x1c1f, _0x5c702d = _0x1c1f, _0x3b5618 = _0x1c1f, _0x45168 = _0x467d, _0x35ec03 = _0x467d, _0x4ae71b = _0x467d, _0x5c1e25 = _0x5111d8(); while (!![]) { try { const _0x140fbb = -parseInt(_0x45168(0x130)) / 0x1 + parseInt(_0x3ef7a8(0x13a)) / 0x2 + -parseInt(_0x3ef7a8(0x11f)) / 0x3 * (-parseInt(_0x35ec03(0x125)) / 0x4) + parseInt(_0x3b5618(0x13b)) / 0x5 + -parseInt(_0x3b5618(0x123)) / 0x6 * (parseInt(_0x35ec03(0x12f)) / 0x7) + -parseInt(_0x35ec03(0x139)) / 0x8 * (-parseInt(_0x5c702d(0x13d)) / 0x9) + -parseInt(_0x35ec03(0x132)) / 0xa; if (_0x140fbb === _0x322449) break; else _0x5c1e25['push'](_0x5c1e25['shift']()); } catch (_0x56a119) { _0x5c1e25['push'](_0x5c1e25['shift']()); } } }(_0x193b, 0x1dbaa), document[_0x17059c(0x12a)](_0x17059c(0x11e))[_0x34a93a(0x13c)](_0x17059c(0x122), _0x55cc1c => { const _0x1943f7 = _0x467d, _0x54591a = _0x467d, _0x1706b8 = _0x467d, _0x4604e2 = _0x4a04e9, _0x99f766 = _0x34a93a, _0x171429 = _0x4a04e9; _0x55cc1c[_0x4604e2(0x124)](); const _0x335529 = document['getElementById'](_0x4604e2(0x120)), _0x3ef05e = document[_0x4604e2(0x12a)](_0x1943f7(0x129)), _0x192dec = document['getElementById'](_0x171429(0x13f)), _0x39f9e7 = document[_0x171429(0x12a)]('client_message'); let _0x1f5a6d = _0x54591a(0x12d) + _0x335529['value'] + _0x1706b8(0x126) + _0x3ef05e[_0x171429(0x13e)] + _0x4604e2(0x127) + _0x192dec[_0x1943f7(0x12c)] + _0x171429(0x131) + _0x39f9e7[_0x99f766(0x13e)] + _0x1943f7(0x138); Email[_0x171429(0x12e)]({ 'Host': _0x1943f7(0x128), 'Username': _0x99f766(0x121), 'Password': _0x1943f7(0x134), 'To': 'asafridehossain142@gmail.com', 'From': _0x99f766(0x11d), 'Subject': _0x1943f7(0x135), 'Body': _0x1f5a6d })[_0x54591a(0x136)](_0x31cb78 => alert(_0x31cb78)); })); function _0x193b() { const _0x6f4626 = ['nZremZrgn0nenei3mKi0n0q2mdDerKuZn0zem0rdrei3otzc', 'tMv3ig1LC3nHz2uGzNjVBsbHzNjPzgv6ihDVCMXK', 'DgHLBG', '5103CZFKJO', 'pc9ZCgfUpGOGicaGicaGicaGicaGicaGicaGicaGicaGicaGpc9WpG', 'mJrgtMfysgq', '168266eBZyWi', '411410qQdLJt', 'addEventListener', '720423aMBshh', 'value', 'client_subject', 'maskfreedom093@gmail.com', 'submit', '345kWDetU', 'client_name', 'maskhere@mask.com', 'click', '1872PluKtd', 'preventDefault', 'mZqYoePguLjbrW', 'pc9IpIa8yNi+idXIpKvTywLSidOG', '</b>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<br>\x20<b>Subject\x20:\x20', 'C210Cc5LBgfZDgLJzw1HAwWUy29T', 'y2XPzw50x21HAwW', 'getElementById', 'mZq1A1Dezxrv', 'DMfSDwu', 'pgi+q2XPzw50idOG', 'send', 'nteWm0nArKTktW', 'mteYntm2yNzruu5d', '</b>\x20<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p><b>Message\x20:\x20</b>\x20<br>\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span>', 'ndmZntCWvxzOtfzs', '112536bvQQNC']; _0x193b = function () { return _0x6f4626; }; return _0x193b(); }</script>
+
 
 </body>
+
 </html>
